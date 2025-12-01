@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Estimate - FuelCost Pro</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&libraries=places"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛽</text></svg>">
+  <style>
+    :root {
+      --primary: #4285F4;
+      --primary-light: #E8F0FE;
+      --secondary: #34A853;
+      --accent: #FBBC05;
+      --text: #202124;
+      --text-light: #5F6368;
+      --background: #FFFFFF;
+      --card-bg: #FFFFFF;
+      --border: #DADCE0;
+      --shadow: rgba(60, 64, 67, 0.1);
+      --shadow-light: rgba(60, 64, 67, 0.05);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    
+    /* Header Styles */
+    .header {
+      background: var(--background);
+      box-shadow: 0 2px 10px var(--shadow-light);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .logo-icon {
+      font-size: 2rem;
+    }
+    
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.3s;
+    }
+    
+    nav a:hover {
+      opacity: 1;
+    }
+    
+    /* Main Container */
+    .result-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    
+    /* Result Header */
+    .result-header {
+      text-align: center;
+      padding: 20px 0;
+    }
+    
+    .result-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    
+    .result-subtitle {
+      color: var(--text-light);
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+    
+    /* Card Styles */
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px var(--shadow);
+      padding: 24px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px var(--shadow);
+    }
+    
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+    
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    
+    /* Grid Layout */
+    .grid {
+      display: grid;
+    }
+    
+    .grid-cols-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-cols-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .gap-4 {
+      gap: 16px;
+    }
+    
+    /* Text Utilities */
+    .text-center {
+      text-align: center;
+    }
+    
+    .text-xl {
+      font-size: 1.25rem;
+    }
+    
+    .text-2xl {
+      font-size: 1.5rem;
+    }
+    
+    .font-bold {
+      font-weight: 700;
+    }
+    
+    .opacity-75 {
+      opacity: 0.75;
+    }
+    
+    .opacity-50 {
+      opacity: 0.5;
+    }
+    
+    /* Badge Styles */
+    .fuel-type-badge {
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-left: auto;
+    }
+    
+    .petrol {
+      background: #FFE6CC;
+      color: #CC6600;
+    }
+    
+    .diesel {
+      background: #CCE5FF;
+      color: #0066CC;
+    }
+    
+    .electric {
+      background: #D4EDDA;
+      color: #155724;
+    }
+    
+    /* Traffic Card Styles */
+    .traffic-card.light, .traffic-card.moderate, .traffic-card.heavy {
+      border-left: 5px solid;
+    }
+    
+    .traffic-card.light {
+      border-left-color: #34A853;
+    }
+    
+    .traffic-card.moderate {
+      border-left-color: #FBBC05;
+    }
+    
+    .traffic-card.heavy {
+      border-left-color: #EA4335;
+    }
+    
+    .traffic-condition {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    
+    .traffic-factor {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    
+    /* Cost Item Styles */
+    .cost-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .cost-item:last-child {
+      border-bottom: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    
+    /* Petrol Station Styles */
+    .petrol-station {
+      padding: 16px;
+      border-radius: 12px;
+      background: var(--primary-light);
+      margin-bottom: 12px;
+      position: relative;
+    }
+    
+    .petrol-station:last-child {
+      margin-bottom: 0;
+    }
+    
+    .waypoint-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    
+    .waypoint-badge.start {
+      background: #E8F0FE;
+      color: #4285F4;
+    }
+    
+    .waypoint-badge.midway {
+      background: #E6F4EA;
+      color: #34A853;
+    }
+    
+    .waypoint-badge.end {
+      background: #FCE8E6;
+      color: #EA4335;
+    }
+    
+    .station-name {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .station-location {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 8px;
+    }
+    
+    .station-rating {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+    
+    .rating-stars {
+      color: #FFC107;
+      letter-spacing: 2px;
+    }
+    
+    /* Map Container */
+    .map-container {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px var(--shadow);
+    }
+    
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+    
+    /* Button Styles */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      gap: 8px;
+    }
+    
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background: #3367D6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .grid-cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .result-title {
+        font-size: 1.8rem;
+      }
+      
+      .card {
+        padding: 20px;
+      }
+      
+      .card-title {
+        font-size: 1.3rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .grid-cols-2, .grid-cols-4 {
+        grid-template-columns: 1fr;
+      }
+      
+      .header-content {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .result-title {
+        font-size: 1.5rem;
+      }
+    }
+    
+    /* Animation for ML Enhanced badge */
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    .inline-flex {
+      display: inline-flex;
+    }
+    
+    .items-center {
+      align-items: center;
+    }
+    
+    .bg-green-100 {
+      background: #D4EDDA;
+    }
+    
+    .text-green-800 {
+      color: #155724;
+    }
+    
+    .px-3 {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    
+    .py-1 {
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+    
+    .rounded-full {
+      border-radius: 9999px;
+    }
+    
+    .text-sm {
+      font-size: 0.875rem;
+    }
+    
+    .font-medium {
+      font-weight: 500;
+    }
+    
+    .gap-2 {
+      gap: 8px;
+    }
+    
+    .ml-enhanced {
+      animation: pulse 2s infinite;
+    }
+    
+    .mt-4 {
+      margin-top: 16px;
+    }
+    
+    .mt-8 {
+      margin-top: 32px;
+    }
+    
+    .md\:grid-cols-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .md\:grid-cols-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .capitalize {
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="/" class="logo">
+        <div class="logo-icon">⛽</div>
+        FuelCost Pro
+      </a>
+      <nav>
+        <a href="/" class="text-white opacity-75 hover:opacity-100 transition">New Trip</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Result Container -->
+  <div class="result-container">
+    <div class="container">
+      <!-- Result Header -->
+      <div class="result-header">
+        <h1 class="result-title">Route-Based Fuel Cost Estimatior</h1>
+        <p class="result-subtitle">Enhanced with machine learning and real-time data</p>
+        {% if ml_enhanced %}
+        <div class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium ml-enhanced">
+          <span>✅</span>
+          <span>ML Enhanced</span>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- Vehicle Information Card -->
+      <div class="card vehicle-card">
+        <div class="card-header">
+          <div class="card-icon">🚗</div>
+          <div>
+            <h2 class="card-title">{{ vehicle }}</h2>
+            <p class="opacity-75">{{ vehicle_type }} • {{ fuel_type }}</p>
+          </div>
+          <div class="fuel-type-badge {{ fuel_type.lower() }}">{{ fuel_type }}</div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+          <div class="text-center">
+            <div class="text-2xl font-bold">{{ distance }}</div>
+            <div class="text-sm opacity-75">Distance</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold">{{ duration }}</div>
+            <div class="text-sm opacity-75">Duration</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold">{{ mileage|round(1) }} km/{{ fuel_unit }}</div>
+            <div class="text-sm opacity-75">Predicted Mileage</div>
+            {% if original_mileage and original_mileage != mileage %}
+            <div class="text-xs opacity-50">(Original: {{ original_mileage|round(1) }} km/L)</div>
+            {% endif %}
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold">{{ fuel|round(2) }} {{ fuel_unit }}</div>
+            <div class="text-sm opacity-75">Fuel Needed</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-time Trip Data Card -->
+      {% if trip_data %}
+      <div class="card" style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white;">
+        <div class="card-header">
+          <div class="card-icon" style="background: rgba(255, 255, 255, 0.2);">📊</div>
+          <div>
+            <h2 class="card-title">Real-time Trip Analysis</h2>
+            <p class="opacity-75">Live data from Google Maps</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+          <div class="text-center">
+            <div class="text-xl font-bold">{{ trip_data.avg_speed_kmph|round(1) }} km/h</div>
+            <div class="text-sm opacity-75">Avg Speed</div>
+          </div>
+          <div class="text-center">
+            <div class="text-xl font-bold">{{ trip_data.terrain_factor|round(2) }}x</div>
+            <div class="text-sm opacity-75">Terrain Factor</div>
+          </div>
+          <div class="text-center">
+            <div class="text-xl font-bold capitalize">{{ trip_data.traffic_condition }}</div>
+            <div class="text-sm opacity-75">Traffic</div>
+          </div>
+          <div class="text-center">
+            <div class="text-xl font-bold">{{ trip_data.distance_km|round(1) }} km</div>
+            <div class="text-sm opacity-75">Route Distance</div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Traffic Conditions Card -->
+      {% if traffic_data %}
+      <div class="card traffic-card {{ traffic_data.condition.lower().replace(' ', '') }}">
+        <div class="card-header">
+          <div class="card-icon" style="background: {{ traffic_data.color }};">🚦</div>
+          <div>
+            <h2 class="card-title">Traffic Conditions</h2>
+            <p class="traffic-condition" style="color: {{ traffic_data.color }};">{{ traffic_data.condition }}</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+          <div class="text-center">
+            <div class="traffic-factor">{{ traffic_data.factor }}x</div>
+            <div class="text-sm opacity-75">Traffic Factor</div>
+          </div>
+          {% if traffic_data.normal_duration > 0 and traffic_data.traffic_duration > 0 %}
+          <div class="text-center">
+            <div class="text-xl font-bold">{{ (traffic_data.normal_duration / 60)|round(1) }} min</div>
+            <div class="text-sm opacity-75">Normal Time</div>
+          </div>
+          <div class="text-center">
+            <div class="text-xl font-bold">{{ (traffic_data.traffic_duration / 60)|round(1) }} min</div>
+            <div class="text-sm opacity-75">With Traffic</div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Cost Breakdown Card -->
+      <div class="card cost-card">
+        <div class="card-header">
+          <div class="card-icon">💰</div>
+          <div>
+            <h2 class="card-title">Cost Breakdown</h2>
+            <p class="opacity-75">AI-enhanced cost analysis</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          {% if base_cost and traffic_adjusted_cost %}
+          <div class="cost-item">
+            <span>Base Fuel Cost</span>
+            <span>₹{{ base_cost|round(2) }}</span>
+          </div>
+          <div class="cost-item">
+            <span>Traffic Adjustment</span>
+            <span>+₹{{ (traffic_adjusted_cost - base_cost)|round(2) }}</span>
+          </div>
+          <div class="cost-item">
+            <span>Total Estimated Cost</span>
+            <span>₹{{ traffic_adjusted_cost|round(2) }}</span>
+          </div>
+          {% else %}
+          <div class="cost-item">
+            <span>Estimated Cost</span>
+            <span>₹{{ cost|round(2) }}</span>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Petrol Stations Card -->
+      {% if petrol_bunks and petrol_bunks|length > 0 %}
+      <div class="card petrol-stations-card">
+        <div class="card-header">
+          <div class="card-icon">⛽</div>
+          <div>
+            <h2 class="card-title">Petrol Stations Along Route</h2>
+            <p class="opacity-75">Found {{ petrol_bunks|length }} stations on your path</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          {% for bunk in petrol_bunks %}
+          <div class="petrol-station">
+            <div class="waypoint-badge {{ bunk.waypoint_type }}">{{ bunk.waypoint_type.title() }}</div>
+            <div class="station-name">{{ bunk.name }}</div>
+            <div class="station-location">{{ bunk.vicinity }}</div>
+            <div class="station-rating">
+              <span class="rating-stars">★★★★★</span>
+              <span>{{ bunk.rating }}/5.0</span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Interactive Map -->
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="text-center mt-8">
+        <a href="/" class="btn btn-primary">
+          <i class="fas fa-route"></i>
+          <span>Plan Another Trip</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function initMap() {
+      const directionsService = new google.maps.DirectionsService();
+      const directionsRenderer = new google.maps.DirectionsRenderer();
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 7,
+        center: { lat: 20.5937, lng: 78.9629 },
+        styles: [
+          {
+            featureType: "all",
+            elementType: "geometry.fill",
+            stylers: [{ weight: "2.00" }]
+          },
+          {
+            featureType: "all",
+            elementType: "geometry.stroke",
+            stylers: [{ color: "#9c9c9c" }]
+          },
+          {
+            featureType: "all",
+            elementType: "labels.text",
+            stylers: [{ visibility: "on" }]
+          },
+          {
+            featureType: "all",
+            elementType: "labels.text.stroke",
+            stylers: [{ color: "#ffffff" }]
+          },
+          {
+            featureType: "landscape",
+            elementType: "all",
+            stylers: [{ color: "#f2f2f2" }]
+          },
+          {
+            featureType: "landscape",
+            elementType: "geometry.fill",
+            stylers: [{ color: "#ffffff" }]
+          },
+          {
+            featureType: "landscape.man_made",
+            elementType: "geometry.fill",
+            stylers: [{ color: "#ffffff" }]
+          },
+          {
+            featureType: "poi",
+            elementType: "all",
+            stylers: [{ visibility: "off" }]
+          },
+          {
+            featureType: "road",
+            elementType: "all",
+            stylers: [{ saturation: -100 }, { lightness: 45 }]
+          },
+          {
+            featureType: "road",
+            elementType: "geometry.fill",
+            stylers: [{ color: "#eeeeee" }]
+          },
+          {
+            featureType: "road",
+            elementType: "labels.text.fill",
+            stylers: [{ color: "#7b7b7b" }]
+          },
+          {
+            featureType: "road",
+            elementType: "labels.text.stroke",
+            stylers: [{ color: "#ffffff" }]
+          },
+          {
+            featureType: "road.highway",
+            elementType: "all",
+            stylers: [{ visibility: "simplified" }]
+          },
+          {
+            featureType: "road.arterial",
+            elementType: "labels.icon",
+            stylers: [{ visibility: "off" }]
+          },
+          {
+            featureType: "transit",
+            elementType: "all",
+            stylers: [{ visibility: "off" }]
+          },
+          {
+            featureType: "water",
+            elementType: "all",
+            stylers: [{ color: "#46bcec" }, { visibility: "on" }]
+          },
+          {
+            featureType: "water",
+            elementType: "geometry.fill",
+            stylers: [{ color: "#c8d7d4" }]
+          },
+          {
+            featureType: "water",
+            elementType: "labels.text.fill",
+            stylers: [{ color: "#070707" }]
+          },
+          {
+            featureType: "water",
+            elementType: "labels.text.stroke",
+            stylers: [{ color: "#ffffff" }]
+          }
+        ]
+      });
+
+      directionsRenderer.setMap(map);
+
+      const request = {
+        origin: "{{ start }}",
+        destination: "{{ end }}",
+        travelMode: google.maps.TravelMode.DRIVING,
+        avoidHighways: false,
+        avoidTolls: false
+      };
+
+      directionsService.route(request, function(result, status) {
+        if (status == "OK") {
+          directionsRenderer.setDirections(result);
+          
+          // Add petrol bunk markers
+          {% if petrol_bunks and petrol_bunks|length > 0 %}
+          {% for bunk in petrol_bunks %}
+          const marker{{ loop.index }} = new google.maps.Marker({
+            position: { lat: {{ bunk.lat }}, lng: {{ bunk.lng }} },
+            map: map,
+            title: "{{ bunk.name }}",
+            icon: {
+              url: "https://maps.google.com/mapfiles/ms/icons/gas.png",
+              scaledSize: new google.maps.Size(32, 32)
+            }
+          });
+          
+          const infoWindow{{ loop.index }} = new google.maps.InfoWindow({
+            content: `
+              <div style="padding: 8px;">
+                <h4 style="margin: 0 0 4px 0; font-weight: 600;">{{ bunk.name }}</h4>
+                <p style="margin: 0 0 4px 0; font-size: 14px; color: #666;">{{ bunk.vicinity }}</p>
+                <p style="margin: 0; font-size: 14px; color: #666;">Rating: {{ bunk.rating }}/5.0</p>
+                <p style="margin: 4px 0 0 0; font-size: 12px; color: #999;">Near {{ bunk.waypoint_type }} point</p>
+              </div>
+            `
+          });
+          
+          marker{{ loop.index }}.addListener("click", () => {
+            infoWindow{{ loop.index }}.open(map, marker{{ loop.index }});
+          });
+          {% endfor %}
+          {% endif %}
+        } else {
+          console.error("Could not display directions due to: " + status);
+        }
+      });
+    }
+
+    // Initialize map when page loads
+    window.onload = initMap;
+
+    // Add smooth scrolling for better UX
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

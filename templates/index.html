@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Cost Estimator</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb9KAAjU4wsaxH9nw6LXyowzYr1B-zxBk&libraries=places"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #4285F4;
+      --primary-light: #E8F0FE;
+      --secondary: #34A853;
+      --accent: #FBBC05;
+      --text: #202124;
+      --text-light: #5F6368;
+      --background: #FFFFFF;
+      --card-bg: #FFFFFF;
+      --border: #DADCE0;
+      --shadow: rgba(60, 64, 67, 0.1);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+    
+    .logo {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+    
+    h1 {
+      font-weight: 700;
+      font-size: 2.2rem;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    
+    .subtitle {
+      color: var(--text-light);
+      font-size: 1.1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px var(--shadow);
+      padding: 30px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px var(--shadow);
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    label i {
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+    
+    input, select {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 16px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      background-color: var(--background);
+    }
+    
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-light);
+    }
+    
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 16px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+    button:hover {
+      background: #3367D6;
+      transform: translateY(-2px);
+    }
+    
+    button:active {
+      transform: translateY(0);
+    }
+    
+    #map {
+      height: 400px;
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 10px;
+      border: 1px solid var(--border);
+    }
+    
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    
+    .feature {
+      display: flex;
+      align-items: center;
+      background: var(--card-bg);
+      padding: 15px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px var(--shadow);
+      gap: 12px;
+      flex: 1;
+      min-width: 200px;
+    }
+    
+    .feature i {
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+    
+    .feature-text h3 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+    
+    .feature-text p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .card {
+        padding: 20px;
+      }
+      
+      h1 {
+        font-size: 1.8rem;
+      }
+      
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <i class="fas fa-route"></i>
+      </div>
+      <h1>Travel Cost Estimator</h1>
+      <p class="subtitle">Plan your journey with accurate cost estimates and optimal routes</p>
+    </header>
+    
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-gas-pump"></i>
+        <div class="feature-text">
+          <h3>Fuel Cost Calculation</h3>
+          <p>Based on current fuel prices</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-route"></i>
+        <div class="feature-text">
+          <h3>Optimal Routes</h3>
+          <p>Find the best path to your destination</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-car"></i>
+        <div class="feature-text">
+          <h3>Vehicle Database</h3>
+          <p>Wide range of vehicles with mileage data</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <form action="/estimate" method="post">
+        <div class="form-group">
+          <label for="vehicle"><i class="fas fa-car"></i> Vehicle</label>
+          <input list="vehicles" name="vehicle" id="vehicle" placeholder="Select or type your vehicle (e.g., Honda Activa)" required>
+          <datalist id="vehicles">
+            {% for v in vehicles %}
+              <option value="{{ v }}">
+            {% endfor %}
+          </datalist>
+        </div>
+
+        <div class="form-group">
+          <label for="start"><i class="fas fa-map-marker-alt"></i> Starting Location</label>
+          <input type="text" id="start" name="start" placeholder="Enter your starting point" required>
+        </div>
+
+        <div class="form-group">
+          <label for="end"><i class="fas fa-flag-checkered"></i> Destination</label>
+          <input type="text" id="end" name="end" placeholder="Enter your destination" required>
+        </div>
+
+        <button type="submit">
+          <i class="fas fa-calculator"></i> Calculate Estimate
+        </button>
+      </form>
+    </div>
+    
+    <div class="card">
+      <h3 style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+        <i class="fas fa-map" style="color: var(--primary);"></i> Route Map
+      </h3>
+      <div id="map"></div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2023 Travel Cost Estimator | Plan your journeys smarter</p>
+  </footer>
+
+  <script>
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 5,
+        center: { lat: 20.5937, lng: 78.9629 }, // India center
+        styles: [
+          {
+            "elementType": "geometry",
+            "stylers": [{ "color": "#f5f5f5" }]
+          },
+          {
+            "elementType": "labels.icon",
+            "stylers": [{ "visibility": "off" }]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#616161" }]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [{ "color": "#f5f5f5" }]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "stylers": [{ "visibility": "off" }]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#bdbdbd" }]
+          },
+          {
+            "featureType": "administrative.neighborhood",
+            "stylers": [{ "visibility": "off" }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{ "color": "#eeeeee" }]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#757575" }]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [{ "color": "#e5e5e5" }]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#9e9e9e" }]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [{ "color": "#ffffff" }]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.icon",
+            "stylers": [{ "visibility": "off" }]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#757575" }]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [{ "color": "#dadada" }]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#616161" }]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#9e9e9e" }]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [{ "color": "#e5e5e5" }]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [{ "color": "#eeeeee" }]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{ "color": "#c9c9c9" }]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [{ "color": "#9e9e9e" }]
+          }
+        ]
+      });
+
+      const input1 = document.getElementById("start");
+      const input2 = document.getElementById("end");
+
+      const autocomplete1 = new google.maps.places.Autocomplete(input1);
+      autocomplete1.bindTo("bounds", map);
+
+      const autocomplete2 = new google.maps.places.Autocomplete(input2);
+      autocomplete2.bindTo("bounds", map);
+      
+      // Add directions service
+      const directionsService = new google.maps.DirectionsService();
+      const directionsRenderer = new google.maps.DirectionsRenderer({
+        map: map,
+        suppressMarkers: false,
+        preserveViewport: true,
+        polylineOptions: {
+          strokeColor: '#4285F4',
+          strokeOpacity: 0.8,
+          strokeWeight: 5
+        }
+      });
+      
+      // Update route when both fields are filled
+      function updateRoute() {
+        if (input1.value && input2.value) {
+          directionsService.route(
+            {
+              origin: input1.value,
+              destination: input2.value,
+              travelMode: google.maps.TravelMode.DRIVING
+            },
+            (response, status) => {
+              if (status === "OK") {
+                directionsRenderer.setDirections(response);
+              }
+            }
+          );
+        }
+      }
+      
+      input1.addEventListener('change', updateRoute);
+      input2.addEventListener('change', updateRoute);
+    }
+
+    window.onload = initMap;
+  </script>
+</body>
+</html>
