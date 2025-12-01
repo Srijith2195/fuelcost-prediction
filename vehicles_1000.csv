@@ -1,0 +1,1001 @@
+vehicle_name,vehicle_type,year,vehicle_mileage,fuel_type,km_range_per_litre_or_charge
+Honda Amaze,Car,1999,21,Diesel,21
+Ducati Monster,Bike,2018,0,Electric,149
+Toyota Prius,Car,2002,22,Hybrid,22
+Suzuki Gixxer SF,Bike,2010,40,Petrol,40
+Hyundai Creta,Car,2002,0,Electric,300
+Hero Splendor Plus,Bike,2011,0,Electric,124
+Hyundai Verna,Car,2019,21,Diesel,21
+Suzuki Gixxer SF,Bike,2014,37,Petrol,37
+Mahindra XUV400 EV,Car,2000,20,Hybrid,20
+Royal Enfield Classic 350,Bike,2000,0,Electric,162
+Toyota Innova,Car,2023,0,Electric,576
+TVS Apache RTR 160,Bike,2000,37,Petrol,37
+Hyundai i20,Car,2006,23,Hybrid,23
+Kawasaki Ninja 300,Bike,2020,51,Petrol,51
+Tesla Model 3,Car,2013,0,Electric,440
+Triumph Street Triple,Bike,2007,0,Electric,177
+Tesla Model 3,Car,2001,21,Hybrid,21
+TVS Apache RTR 160,Bike,2008,0,Electric,95
+Mahindra XUV400 EV,Car,2024,27,Hybrid,27
+Bajaj Pulsar 150,Bike,2003,0,Electric,123
+Hyundai Verna,Car,2014,17,Diesel,17
+Revolt RV400,Bike,2022,60,Petrol,60
+Toyota Innova,Car,1995,0,Electric,345
+Ola S1 Pro,Bike,2007,0,Electric,196
+Toyota Innova,Car,2000,0,Electric,286
+Ather 450X,Bike,2006,0,Electric,116
+Maruti Swift,Car,1996,20,Petrol,20
+Revolt RV400,Bike,2016,0,Electric,153
+Tata Altroz,Car,2014,17,Petrol,17
+Kawasaki Ninja 300,Bike,2006,0,Electric,99
+Toyota Innova,Car,2020,0,Electric,397
+Hero Splendor Plus,Bike,2000,0,Electric,111
+Toyota Innova,Car,2003,23,Hybrid,23
+Ola S1 Pro,Bike,2018,0,Electric,149
+Hyundai Kona Electric,Car,2004,23,Petrol,23
+Honda Activa 6G,Bike,2005,37,Petrol,37
+Volkswagen Polo,Car,2010,28,Hybrid,28
+Hero Splendor Plus,Bike,2021,31,Petrol,31
+Renault Duster,Car,2005,20,Hybrid,20
+Royal Enfield Classic 350,Bike,2012,59,Petrol,59
+Ford EcoSport,Car,2016,20,Hybrid,20
+KTM Duke 390,Bike,2009,0,Electric,177
+Hyundai Kona Electric,Car,2016,16,Petrol,16
+Kawasaki Ninja 300,Bike,2005,0,Electric,149
+Maruti Dzire,Car,2003,25,Hybrid,25
+Bajaj Pulsar 150,Bike,2025,44,Petrol,44
+Kia Seltos,Car,2006,22,Petrol,22
+Yamaha R15 V4,Bike,2004,0,Electric,114
+Kia Seltos,Car,2002,14,Petrol,14
+Bajaj Dominar 400,Bike,2025,0,Electric,165
+Tesla Model Y,Car,2001,24,Hybrid,24
+Bajaj Pulsar 150,Bike,2017,30,Petrol,30
+Volkswagen Polo,Car,1997,20,Hybrid,20
+Royal Enfield Classic 350,Bike,2011,0,Electric,82
+Honda Accord Hybrid,Car,2008,0,Electric,347
+Ola S1 Pro,Bike,2012,0,Electric,135
+Jeep Compass,Car,1998,0,Electric,510
+Harley Davidson Street 750,Bike,2020,58,Petrol,58
+Hyundai i20,Car,2022,0,Electric,212
+Bajaj Dominar 400,Bike,2008,50,Petrol,50
+Tata Nexon,Car,1998,26,Hybrid,26
+Triumph Street Triple,Bike,2010,0,Electric,163
+Hyundai Verna,Car,1995,26,Hybrid,26
+Hero Splendor Plus,Bike,2024,30,Petrol,30
+Tesla Model 3,Car,2012,0,Electric,283
+Revolt RV400,Bike,2006,33,Petrol,33
+Volkswagen Polo,Car,1996,13,Diesel,13
+TVS Apache RTR 160,Bike,2011,0,Electric,163
+Tesla Model 3,Car,2004,0,Electric,268
+Honda Shine,Bike,2017,48,Petrol,48
+Ford EcoSport,Car,1999,20,Petrol,20
+Kawasaki Ninja 300,Bike,2018,35,Petrol,35
+Hyundai i20,Car,2013,22,Hybrid,22
+Harley Davidson Street 750,Bike,2022,57,Petrol,57
+BMW i4,Car,1996,26,Hybrid,26
+BMW G310R,Bike,2014,51,Petrol,51
+MG ZS EV,Car,2009,0,Electric,558
+Royal Enfield Classic 350,Bike,2006,40,Petrol,40
+Maruti Swift,Car,2007,22,Diesel,22
+Bajaj Pulsar 150,Bike,2004,48,Petrol,48
+Jeep Compass,Car,2012,16,Diesel,16
+Ather 450X,Bike,2014,0,Electric,188
+Maruti Baleno,Car,2014,0,Electric,478
+Royal Enfield Classic 350,Bike,2025,0,Electric,93
+Toyota Fortuner,Car,1997,0,Electric,495
+Honda Shine,Bike,2023,45,Petrol,45
+Hyundai Creta,Car,2002,15,Diesel,15
+Royal Enfield Classic 350,Bike,2000,37,Petrol,37
+Hyundai Verna,Car,2025,25,Hybrid,25
+Honda Shine,Bike,2017,42,Petrol,42
+Maruti Dzire,Car,2008,0,Electric,329
+Bajaj Pulsar 150,Bike,2025,43,Petrol,43
+MG ZS EV,Car,2002,23,Hybrid,23
+Yamaha R15 V4,Bike,2008,38,Petrol,38
+Tata Altroz,Car,2009,14,Petrol,14
+KTM Duke 390,Bike,2019,0,Electric,127
+Honda City,Car,2005,0,Electric,208
+Suzuki Gixxer SF,Bike,2021,0,Electric,109
+Hyundai i20,Car,2004,12,Petrol,12
+Ather 450X,Bike,2003,0,Electric,118
+Hyundai Kona Electric,Car,1997,13,Diesel,13
+Triumph Street Triple,Bike,2010,54,Petrol,54
+Honda Accord Hybrid,Car,2002,0,Electric,266
+Ducati Monster,Bike,2004,60,Petrol,60
+Renault Duster,Car,1998,18,Petrol,18
+Triumph Street Triple,Bike,2019,53,Petrol,53
+Audi e-tron,Car,2007,12,Diesel,12
+Royal Enfield Classic 350,Bike,2008,0,Electric,200
+Jeep Compass,Car,2000,28,Hybrid,28
+KTM Duke 390,Bike,2004,58,Petrol,58
+Audi e-tron,Car,2024,24,Hybrid,24
+BMW G310R,Bike,2014,34,Petrol,34
+Maruti Swift,Car,2002,0,Electric,236
+Bajaj Dominar 400,Bike,2012,31,Petrol,31
+Mahindra XUV300,Car,2006,0,Electric,512
+Kawasaki Ninja 300,Bike,2003,0,Electric,143
+MG ZS EV,Car,2005,15,Diesel,15
+Revolt RV400,Bike,2017,0,Electric,130
+Jeep Compass,Car,2018,20,Petrol,20
+TVS Apache RTR 160,Bike,2007,58,Petrol,58
+Mahindra XUV300,Car,2002,14,Petrol,14
+Hero Splendor Plus,Bike,2002,0,Electric,119
+Toyota Prius,Car,2012,0,Electric,595
+BMW G310R,Bike,2024,0,Electric,200
+MG ZS EV,Car,2010,0,Electric,310
+Ducati Monster,Bike,2009,34,Petrol,34
+Toyota Innova,Car,2004,0,Electric,389
+Ola S1 Pro,Bike,2011,0,Electric,187
+Mercedes EQS,Car,2011,12,Diesel,12
+Bajaj Dominar 400,Bike,2001,0,Electric,185
+Mahindra XUV300,Car,2012,26,Hybrid,26
+KTM Duke 390,Bike,2011,49,Petrol,49
+Tata Altroz,Car,2002,20,Hybrid,20
+KTM Duke 390,Bike,2004,57,Petrol,57
+Mahindra Scorpio,Car,2014,23,Petrol,23
+Royal Enfield Classic 350,Bike,2010,44,Petrol,44
+Mahindra Scorpio,Car,2025,15,Petrol,15
+Triumph Street Triple,Bike,2022,57,Petrol,57
+Honda City,Car,2012,25,Petrol,25
+TVS Apache RTR 160,Bike,2006,0,Electric,155
+Tesla Model Y,Car,2009,24,Hybrid,24
+Bajaj Dominar 400,Bike,2006,49,Petrol,49
+Tesla Model 3,Car,2002,21,Diesel,21
+Bajaj Pulsar 150,Bike,2024,30,Petrol,30
+Jeep Compass,Car,2010,0,Electric,311
+TVS Apache RTR 160,Bike,2004,0,Electric,137
+Jeep Compass,Car,2012,0,Electric,304
+BMW G310R,Bike,2005,0,Electric,151
+Hyundai Kona Electric,Car,2021,23,Petrol,23
+Honda Activa 6G,Bike,2002,0,Electric,103
+Mercedes EQS,Car,1996,14,Petrol,14
+Bajaj Pulsar 150,Bike,2002,0,Electric,141
+Maruti Baleno,Car,2007,23,Hybrid,23
+Triumph Street Triple,Bike,2012,49,Petrol,49
+Honda City,Car,2024,0,Electric,579
+Harley Davidson Street 750,Bike,2004,48,Petrol,48
+Toyota Fortuner,Car,1998,24,Diesel,24
+Triumph Street Triple,Bike,2001,32,Petrol,32
+Honda Amaze,Car,2002,19,Diesel,19
+Revolt RV400,Bike,2012,33,Petrol,33
+Ford EcoSport,Car,2008,0,Electric,371
+Ola S1 Pro,Bike,2008,42,Petrol,42
+Maruti Swift,Car,2016,22,Petrol,22
+Triumph Street Triple,Bike,2008,49,Petrol,49
+Mahindra Scorpio,Car,2019,13,Petrol,13
+Yamaha R15 V4,Bike,2017,60,Petrol,60
+Audi e-tron,Car,2014,26,Hybrid,26
+Ola S1 Pro,Bike,2007,47,Petrol,47
+Mahindra Scorpio,Car,2017,22,Hybrid,22
+KTM Duke 390,Bike,2010,0,Electric,110
+Maruti Dzire,Car,1996,20,Diesel,20
+Triumph Street Triple,Bike,2000,51,Petrol,51
+Tata Nexon,Car,2010,11,Petrol,11
+Triumph Street Triple,Bike,2002,42,Petrol,42
+Tata Nexon,Car,2021,21,Petrol,21
+BMW G310R,Bike,2025,0,Electric,111
+Ford EcoSport,Car,2021,16,Diesel,16
+Revolt RV400,Bike,2023,0,Electric,116
+Maruti Swift,Car,2021,21,Hybrid,21
+Kawasaki Ninja 300,Bike,2016,37,Petrol,37
+Audi e-tron,Car,2007,27,Hybrid,27
+Hero Splendor Plus,Bike,2013,0,Electric,191
+Tesla Model 3,Car,2023,0,Electric,541
+Honda Shine,Bike,2006,0,Electric,82
+Mahindra XUV400 EV,Car,2008,27,Hybrid,27
+TVS Apache RTR 160,Bike,2009,0,Electric,111
+Mahindra XUV400 EV,Car,2012,12,Petrol,12
+Royal Enfield Classic 350,Bike,2025,59,Petrol,59
+Tesla Model 3,Car,1998,28,Hybrid,28
+Ducati Monster,Bike,2004,54,Petrol,54
+Tesla Model Y,Car,2003,25,Hybrid,25
+Honda Shine,Bike,2008,39,Petrol,39
+Mahindra Scorpio,Car,2011,0,Electric,277
+Ola S1 Pro,Bike,2010,0,Electric,124
+Jeep Compass,Car,2005,17,Diesel,17
+Triumph Street Triple,Bike,2014,0,Electric,188
+Hyundai Creta,Car,2004,26,Hybrid,26
+Royal Enfield Classic 350,Bike,2025,0,Electric,135
+BMW i4,Car,1996,28,Hybrid,28
+Honda Shine,Bike,2006,0,Electric,186
+Mahindra XUV300,Car,1998,23,Hybrid,23
+Honda Shine,Bike,2002,0,Electric,200
+Maruti Swift,Car,2015,22,Diesel,22
+Ducati Monster,Bike,2021,0,Electric,153
+Hyundai Verna,Car,2015,20,Diesel,20
+Kawasaki Ninja 300,Bike,2017,35,Petrol,35
+Ford EcoSport,Car,2022,0,Electric,225
+Yamaha R15 V4,Bike,2000,34,Petrol,34
+Renault Duster,Car,1998,12,Diesel,12
+Bajaj Pulsar 150,Bike,2008,0,Electric,117
+Maruti Dzire,Car,2024,23,Hybrid,23
+Revolt RV400,Bike,2009,50,Petrol,50
+Tata Altroz,Car,2000,25,Hybrid,25
+Bajaj Dominar 400,Bike,2005,0,Electric,127
+Mahindra Scorpio,Car,2017,0,Electric,556
+Revolt RV400,Bike,2007,0,Electric,108
+BMW i4,Car,2013,0,Electric,324
+Ducati Monster,Bike,2014,0,Electric,105
+Honda City,Car,2009,17,Petrol,17
+Triumph Street Triple,Bike,2014,34,Petrol,34
+Renault Duster,Car,2009,14,Diesel,14
+Revolt RV400,Bike,2012,51,Petrol,51
+BMW i4,Car,2015,24,Diesel,24
+TVS Apache RTR 160,Bike,2017,0,Electric,165
+Tesla Model Y,Car,2004,13,Diesel,13
+Yamaha MT15,Bike,2022,36,Petrol,36
+Jeep Compass,Car,1999,15,Diesel,15
+BMW G310R,Bike,2001,0,Electric,89
+Hyundai Verna,Car,2019,23,Hybrid,23
+Honda Activa 6G,Bike,2017,0,Electric,146
+Mahindra XUV300,Car,2022,21,Petrol,21
+Revolt RV400,Bike,2017,59,Petrol,59
+Skoda Rapid,Car,2007,25,Petrol,25
+Ducati Monster,Bike,2014,37,Petrol,37
+Maruti Swift,Car,2005,0,Electric,599
+TVS iQube,Bike,2012,54,Petrol,54
+Hyundai Creta,Car,2012,0,Electric,294
+Ducati Monster,Bike,2000,40,Petrol,40
+Kia Seltos,Car,1997,20,Hybrid,20
+Honda Activa 6G,Bike,2000,0,Electric,186
+Toyota Fortuner,Car,2004,26,Hybrid,26
+Revolt RV400,Bike,2004,55,Petrol,55
+Honda Amaze,Car,1998,15,Diesel,15
+Yamaha R15 V4,Bike,2022,35,Petrol,35
+Toyota Fortuner,Car,2025,0,Electric,268
+KTM Duke 390,Bike,2016,0,Electric,132
+Mahindra XUV300,Car,2016,11,Petrol,11
+Bajaj Dominar 400,Bike,2005,0,Electric,170
+Mahindra XUV400 EV,Car,2018,0,Electric,245
+Bajaj Dominar 400,Bike,2014,0,Electric,184
+Maruti Swift,Car,2008,24,Petrol,24
+Royal Enfield Classic 350,Bike,2012,0,Electric,187
+Maruti Swift,Car,2012,25,Petrol,25
+BMW G310R,Bike,2021,52,Petrol,52
+Mahindra XUV400 EV,Car,2024,21,Diesel,21
+Suzuki Gixxer SF,Bike,2016,44,Petrol,44
+Volkswagen Polo,Car,2018,16,Petrol,16
+Yamaha MT15,Bike,2025,0,Electric,184
+Honda Accord Hybrid,Car,2025,24,Diesel,24
+Suzuki Gixxer SF,Bike,2011,0,Electric,170
+Skoda Rapid,Car,2002,13,Petrol,13
+Bajaj Dominar 400,Bike,2009,0,Electric,81
+Jeep Compass,Car,2006,19,Diesel,19
+Yamaha MT15,Bike,2009,55,Petrol,55
+Renault Duster,Car,2001,0,Electric,341
+BMW G310R,Bike,2010,0,Electric,140
+Mercedes EQS,Car,2015,0,Electric,511
+Bajaj Pulsar 150,Bike,2009,56,Petrol,56
+Volkswagen Polo,Car,1995,17,Petrol,17
+Yamaha R15 V4,Bike,2006,59,Petrol,59
+Honda City,Car,2011,15,Petrol,15
+TVS Apache RTR 160,Bike,2013,0,Electric,172
+Hyundai Creta,Car,2010,27,Hybrid,27
+Bajaj Dominar 400,Bike,2025,0,Electric,157
+Tesla Model 3,Car,2016,16,Petrol,16
+BMW G310R,Bike,2009,0,Electric,165
+Honda Amaze,Car,2016,25,Hybrid,25
+Yamaha MT15,Bike,2004,0,Electric,121
+Toyota Prius,Car,2010,26,Hybrid,26
+TVS iQube,Bike,2023,0,Electric,124
+Tata Altroz,Car,2010,21,Hybrid,21
+BMW G310R,Bike,2018,0,Electric,146
+Toyota Innova,Car,2005,16,Diesel,16
+Ola S1 Pro,Bike,2005,41,Petrol,41
+Jeep Compass,Car,2002,0,Electric,335
+Hero Splendor Plus,Bike,2025,50,Petrol,50
+Ford EcoSport,Car,2014,22,Petrol,22
+Yamaha R15 V4,Bike,2014,37,Petrol,37
+Volkswagen Polo,Car,2003,23,Petrol,23
+Honda Activa 6G,Bike,2015,59,Petrol,59
+Honda City,Car,2003,17,Diesel,17
+Triumph Street Triple,Bike,2022,56,Petrol,56
+Maruti Baleno,Car,2020,20,Hybrid,20
+Yamaha MT15,Bike,2000,0,Electric,129
+Hyundai Verna,Car,2024,13,Diesel,13
+Hero Splendor Plus,Bike,2005,58,Petrol,58
+Ford EcoSport,Car,2019,21,Diesel,21
+Royal Enfield Classic 350,Bike,2008,0,Electric,168
+Maruti Baleno,Car,2004,23,Hybrid,23
+KTM Duke 390,Bike,2007,0,Electric,137
+Toyota Fortuner,Car,2010,28,Hybrid,28
+Ducati Monster,Bike,2005,33,Petrol,33
+Honda City,Car,2023,0,Electric,425
+BMW G310R,Bike,2002,34,Petrol,34
+Renault Duster,Car,2023,21,Petrol,21
+KTM Duke 390,Bike,2013,0,Electric,85
+Hyundai Kona Electric,Car,2024,19,Diesel,19
+Bajaj Pulsar 150,Bike,2012,34,Petrol,34
+BMW i4,Car,2006,12,Petrol,12
+Bajaj Dominar 400,Bike,2010,0,Electric,148
+Tata Nexon,Car,2011,0,Electric,206
+Honda Shine,Bike,2011,0,Electric,118
+Hyundai Kona Electric,Car,2016,12,Diesel,12
+TVS iQube,Bike,2015,39,Petrol,39
+Toyota Fortuner,Car,2016,0,Electric,478
+Yamaha R15 V4,Bike,2017,53,Petrol,53
+MG ZS EV,Car,1997,25,Hybrid,25
+Bajaj Pulsar 150,Bike,2021,42,Petrol,42
+MG ZS EV,Car,2021,0,Electric,541
+Ducati Monster,Bike,2011,0,Electric,152
+Kia Seltos,Car,2005,18,Petrol,18
+Harley Davidson Street 750,Bike,2009,46,Petrol,46
+Kia Seltos,Car,2010,19,Diesel,19
+Ather 450X,Bike,2024,59,Petrol,59
+Toyota Fortuner,Car,1996,20,Petrol,20
+Honda Shine,Bike,2003,54,Petrol,54
+Mahindra Scorpio,Car,2021,0,Electric,586
+Honda Activa 6G,Bike,2023,0,Electric,133
+Jeep Compass,Car,2024,12,Diesel,12
+Yamaha MT15,Bike,2022,0,Electric,150
+Toyota Fortuner,Car,2019,20,Diesel,20
+KTM Duke 390,Bike,2025,33,Petrol,33
+Tata Nexon,Car,2001,22,Hybrid,22
+Ola S1 Pro,Bike,2013,0,Electric,186
+Hyundai Creta,Car,1999,0,Electric,398
+KTM Duke 390,Bike,2015,0,Electric,129
+Toyota Prius,Car,2016,14,Petrol,14
+Hero Splendor Plus,Bike,2018,0,Electric,151
+BMW i4,Car,2012,12,Petrol,12
+Yamaha MT15,Bike,2020,0,Electric,165
+Ford EcoSport,Car,2016,12,Petrol,12
+Harley Davidson Street 750,Bike,2025,0,Electric,174
+MG ZS EV,Car,2025,22,Diesel,22
+Triumph Street Triple,Bike,2024,0,Electric,199
+Hyundai Creta,Car,2023,21,Petrol,21
+Suzuki Gixxer SF,Bike,2011,59,Petrol,59
+Kia Seltos,Car,2017,0,Electric,523
+Bajaj Dominar 400,Bike,2022,0,Electric,142
+Mahindra XUV400 EV,Car,2001,16,Diesel,16
+Hero Splendor Plus,Bike,2022,0,Electric,109
+Hyundai Kona Electric,Car,2006,0,Electric,592
+Suzuki Gixxer SF,Bike,2017,49,Petrol,49
+Mahindra XUV300,Car,2016,12,Petrol,12
+Triumph Street Triple,Bike,2018,41,Petrol,41
+Tesla Model 3,Car,2000,18,Diesel,18
+Ola S1 Pro,Bike,2025,32,Petrol,32
+Maruti Baleno,Car,2021,19,Diesel,19
+Yamaha MT15,Bike,2001,46,Petrol,46
+Renault Duster,Car,1995,0,Electric,306
+TVS iQube,Bike,2017,0,Electric,118
+Kia Seltos,Car,2025,0,Electric,392
+KTM Duke 390,Bike,2023,0,Electric,161
+Mahindra Scorpio,Car,2011,20,Hybrid,20
+Triumph Street Triple,Bike,2005,55,Petrol,55
+Toyota Prius,Car,1998,23,Diesel,23
+Suzuki Gixxer SF,Bike,2005,0,Electric,124
+Honda Amaze,Car,2009,19,Petrol,19
+TVS iQube,Bike,2023,0,Electric,87
+Honda Accord Hybrid,Car,2024,0,Electric,388
+Yamaha R15 V4,Bike,2000,57,Petrol,57
+Mahindra Scorpio,Car,1997,23,Diesel,23
+TVS iQube,Bike,2017,0,Electric,174
+Tata Altroz,Car,2019,16,Diesel,16
+Revolt RV400,Bike,2022,58,Petrol,58
+Tesla Model Y,Car,2008,0,Electric,599
+Yamaha R15 V4,Bike,2004,0,Electric,170
+Mahindra XUV400 EV,Car,2019,12,Diesel,12
+KTM Duke 390,Bike,2011,56,Petrol,56
+Tata Nexon,Car,2023,24,Hybrid,24
+BMW G310R,Bike,2013,51,Petrol,51
+Maruti Baleno,Car,2010,21,Hybrid,21
+Revolt RV400,Bike,2002,0,Electric,127
+Skoda Rapid,Car,2025,0,Electric,210
+Ola S1 Pro,Bike,2012,0,Electric,183
+Mahindra Scorpio,Car,2002,13,Diesel,13
+Yamaha R15 V4,Bike,2020,49,Petrol,49
+Maruti Swift,Car,1998,20,Hybrid,20
+Ola S1 Pro,Bike,2001,0,Electric,88
+Honda Amaze,Car,2000,20,Hybrid,20
+Suzuki Gixxer SF,Bike,2020,60,Petrol,60
+Mahindra XUV300,Car,2024,0,Electric,287
+Triumph Street Triple,Bike,2023,0,Electric,198
+Skoda Rapid,Car,2020,17,Diesel,17
+Ducati Monster,Bike,2009,43,Petrol,43
+BMW i4,Car,2003,0,Electric,334
+Hero Splendor Plus,Bike,2018,0,Electric,117
+Hyundai Verna,Car,1997,23,Hybrid,23
+Harley Davidson Street 750,Bike,2011,0,Electric,126
+Honda City,Car,2013,0,Electric,438
+TVS Apache RTR 160,Bike,2015,0,Electric,108
+Toyota Innova,Car,2008,13,Petrol,13
+Ola S1 Pro,Bike,2025,56,Petrol,56
+BMW i4,Car,2025,12,Petrol,12
+Revolt RV400,Bike,2011,0,Electric,162
+Hyundai Verna,Car,2019,18,Petrol,18
+Ather 450X,Bike,2025,34,Petrol,34
+Toyota Innova,Car,2016,27,Hybrid,27
+Hero Splendor Plus,Bike,2011,49,Petrol,49
+Jeep Compass,Car,2020,26,Hybrid,26
+Bajaj Dominar 400,Bike,2022,32,Petrol,32
+Renault Duster,Car,2024,0,Electric,585
+BMW G310R,Bike,2023,48,Petrol,48
+Kia Seltos,Car,2003,24,Hybrid,24
+TVS Apache RTR 160,Bike,2015,43,Petrol,43
+Maruti Swift,Car,2003,0,Electric,589
+Honda Activa 6G,Bike,2015,0,Electric,189
+Volkswagen Polo,Car,2013,23,Diesel,23
+Ducati Monster,Bike,2017,0,Electric,179
+Tesla Model 3,Car,2006,14,Diesel,14
+Bajaj Dominar 400,Bike,2012,0,Electric,177
+Mahindra XUV300,Car,2016,23,Hybrid,23
+Triumph Street Triple,Bike,2002,0,Electric,133
+Audi e-tron,Car,2015,0,Electric,509
+Yamaha R15 V4,Bike,2010,45,Petrol,45
+Tesla Model 3,Car,2010,21,Diesel,21
+BMW G310R,Bike,2021,31,Petrol,31
+Toyota Innova,Car,1998,19,Diesel,19
+Royal Enfield Classic 350,Bike,2009,0,Electric,86
+Mercedes EQS,Car,2017,0,Electric,362
+Harley Davidson Street 750,Bike,2004,0,Electric,97
+Hyundai Verna,Car,2006,28,Hybrid,28
+Ola S1 Pro,Bike,2015,50,Petrol,50
+Mercedes EQS,Car,2022,0,Electric,591
+Hero Splendor Plus,Bike,2023,0,Electric,162
+Mahindra Scorpio,Car,1995,17,Petrol,17
+Yamaha R15 V4,Bike,2020,31,Petrol,31
+Tata Altroz,Car,2017,12,Diesel,12
+Royal Enfield Classic 350,Bike,2001,0,Electric,98
+Tata Nexon,Car,1999,21,Petrol,21
+BMW G310R,Bike,2000,30,Petrol,30
+MG ZS EV,Car,2014,0,Electric,326
+KTM Duke 390,Bike,2022,60,Petrol,60
+Mahindra Scorpio,Car,2021,18,Diesel,18
+Ather 450X,Bike,2014,50,Petrol,50
+Skoda Rapid,Car,2000,23,Diesel,23
+Yamaha R15 V4,Bike,2006,37,Petrol,37
+Hyundai Creta,Car,2015,22,Hybrid,22
+Triumph Street Triple,Bike,2010,0,Electric,106
+Maruti Swift,Car,2021,0,Electric,414
+Bajaj Pulsar 150,Bike,2024,0,Electric,81
+Honda Accord Hybrid,Car,2015,22,Diesel,22
+Yamaha R15 V4,Bike,2018,0,Electric,90
+Toyota Innova,Car,2024,23,Diesel,23
+Suzuki Gixxer SF,Bike,2021,0,Electric,186
+Kia Seltos,Car,2025,19,Diesel,19
+BMW G310R,Bike,2007,0,Electric,166
+Mahindra XUV300,Car,2005,22,Diesel,22
+BMW G310R,Bike,2000,51,Petrol,51
+Audi e-tron,Car,2010,10,Petrol,10
+KTM Duke 390,Bike,2007,57,Petrol,57
+Tata Nexon,Car,2022,21,Diesel,21
+Ducati Monster,Bike,2014,60,Petrol,60
+Skoda Rapid,Car,2011,24,Diesel,24
+Yamaha R15 V4,Bike,2004,48,Petrol,48
+Renault Duster,Car,2002,11,Petrol,11
+BMW G310R,Bike,2025,32,Petrol,32
+Hyundai i20,Car,2012,22,Hybrid,22
+Yamaha R15 V4,Bike,2024,0,Electric,148
+MG ZS EV,Car,2002,17,Diesel,17
+Honda Shine,Bike,2015,43,Petrol,43
+Skoda Rapid,Car,2006,22,Diesel,22
+Yamaha MT15,Bike,2001,34,Petrol,34
+Toyota Prius,Car,2003,21,Hybrid,21
+Honda Activa 6G,Bike,2010,60,Petrol,60
+Honda City,Car,2019,23,Diesel,23
+Honda Shine,Bike,2023,57,Petrol,57
+Hyundai Verna,Car,2021,27,Hybrid,27
+Honda Activa 6G,Bike,2021,0,Electric,144
+Volkswagen Polo,Car,2002,0,Electric,546
+KTM Duke 390,Bike,2015,41,Petrol,41
+Honda City,Car,2011,25,Hybrid,25
+Yamaha MT15,Bike,2017,0,Electric,123
+Kia Seltos,Car,2019,20,Diesel,20
+Suzuki Gixxer SF,Bike,2023,41,Petrol,41
+BMW i4,Car,2007,22,Petrol,22
+Honda Shine,Bike,2009,0,Electric,200
+MG ZS EV,Car,1998,12,Diesel,12
+Triumph Street Triple,Bike,2009,31,Petrol,31
+Renault Duster,Car,1997,26,Hybrid,26
+TVS Apache RTR 160,Bike,2003,33,Petrol,33
+BMW i4,Car,2008,18,Diesel,18
+Yamaha R15 V4,Bike,2014,0,Electric,108
+Tesla Model Y,Car,2013,25,Hybrid,25
+Suzuki Gixxer SF,Bike,2017,53,Petrol,53
+Kia Seltos,Car,2017,0,Electric,598
+Bajaj Dominar 400,Bike,2025,0,Electric,173
+Ford EcoSport,Car,2020,21,Hybrid,21
+Triumph Street Triple,Bike,2004,50,Petrol,50
+Ford EcoSport,Car,2008,22,Hybrid,22
+Yamaha R15 V4,Bike,2022,0,Electric,99
+Maruti Swift,Car,2013,24,Petrol,24
+Bajaj Pulsar 150,Bike,2000,0,Electric,144
+Honda Amaze,Car,2002,19,Petrol,19
+Honda Shine,Bike,2007,55,Petrol,55
+Honda Accord Hybrid,Car,2008,0,Electric,320
+Suzuki Gixxer SF,Bike,2015,49,Petrol,49
+Tesla Model Y,Car,2001,0,Electric,385
+Kawasaki Ninja 300,Bike,2020,0,Electric,128
+Mahindra XUV300,Car,2018,0,Electric,334
+Ducati Monster,Bike,2006,39,Petrol,39
+Hyundai i20,Car,2005,16,Diesel,16
+Bajaj Pulsar 150,Bike,2018,50,Petrol,50
+Toyota Prius,Car,2006,25,Hybrid,25
+Yamaha MT15,Bike,2003,0,Electric,130
+Renault Duster,Car,2023,0,Electric,461
+Suzuki Gixxer SF,Bike,2006,38,Petrol,38
+Mahindra XUV400 EV,Car,1999,21,Hybrid,21
+Harley Davidson Street 750,Bike,2001,0,Electric,199
+Mahindra XUV300,Car,2023,26,Hybrid,26
+Bajaj Pulsar 150,Bike,2013,38,Petrol,38
+MG ZS EV,Car,2024,23,Hybrid,23
+Triumph Street Triple,Bike,2024,42,Petrol,42
+Hyundai Kona Electric,Car,2023,0,Electric,458
+Honda Activa 6G,Bike,2010,0,Electric,177
+BMW i4,Car,2022,11,Petrol,11
+Bajaj Dominar 400,Bike,2025,0,Electric,116
+Mahindra XUV400 EV,Car,1996,0,Electric,421
+Honda Shine,Bike,2020,0,Electric,179
+Tata Altroz,Car,2024,0,Electric,251
+Honda Activa 6G,Bike,2004,40,Petrol,40
+Honda City,Car,2019,25,Hybrid,25
+Revolt RV400,Bike,2004,57,Petrol,57
+BMW i4,Car,2017,0,Electric,341
+Yamaha R15 V4,Bike,2020,50,Petrol,50
+Toyota Fortuner,Car,1997,16,Petrol,16
+Yamaha MT15,Bike,2023,47,Petrol,47
+Mahindra XUV400 EV,Car,2020,23,Hybrid,23
+Yamaha R15 V4,Bike,2003,53,Petrol,53
+Tata Nexon,Car,1998,0,Electric,264
+Revolt RV400,Bike,2025,37,Petrol,37
+Hyundai Kona Electric,Car,2025,0,Electric,569
+BMW G310R,Bike,2004,36,Petrol,36
+Volkswagen Polo,Car,2008,21,Hybrid,21
+Bajaj Dominar 400,Bike,2019,54,Petrol,54
+Jeep Compass,Car,2018,15,Diesel,15
+TVS iQube,Bike,2005,49,Petrol,49
+Renault Duster,Car,2010,0,Electric,264
+BMW G310R,Bike,2019,0,Electric,80
+Hyundai Kona Electric,Car,2006,0,Electric,599
+Royal Enfield Classic 350,Bike,2005,0,Electric,139
+Skoda Rapid,Car,2008,24,Petrol,24
+Yamaha R15 V4,Bike,2023,54,Petrol,54
+Audi e-tron,Car,1995,14,Petrol,14
+Honda Activa 6G,Bike,2025,0,Electric,109
+Maruti Dzire,Car,2016,20,Hybrid,20
+Revolt RV400,Bike,2013,0,Electric,146
+Audi e-tron,Car,2006,0,Electric,432
+Honda Shine,Bike,2007,0,Electric,166
+Ford EcoSport,Car,1998,13,Diesel,13
+Yamaha MT15,Bike,2023,31,Petrol,31
+Hyundai i20,Car,2025,23,Hybrid,23
+Yamaha MT15,Bike,2005,0,Electric,111
+Ford EcoSport,Car,2017,21,Hybrid,21
+TVS Apache RTR 160,Bike,2024,45,Petrol,45
+Hyundai Creta,Car,2013,0,Electric,201
+KTM Duke 390,Bike,2025,0,Electric,113
+Toyota Prius,Car,2006,13,Diesel,13
+Honda Shine,Bike,2005,0,Electric,95
+Maruti Swift,Car,2003,11,Petrol,11
+Ather 450X,Bike,2020,0,Electric,121
+Tesla Model 3,Car,1999,17,Petrol,17
+TVS iQube,Bike,2025,0,Electric,194
+Ford EcoSport,Car,2004,10,Petrol,10
+Bajaj Dominar 400,Bike,2015,50,Petrol,50
+Tata Altroz,Car,2009,24,Hybrid,24
+Harley Davidson Street 750,Bike,2021,52,Petrol,52
+Maruti Baleno,Car,2001,18,Petrol,18
+TVS iQube,Bike,2022,0,Electric,151
+Jeep Compass,Car,2014,22,Diesel,22
+Ducati Monster,Bike,2003,0,Electric,149
+Ford EcoSport,Car,2001,0,Electric,356
+TVS Apache RTR 160,Bike,2025,58,Petrol,58
+Renault Duster,Car,2023,24,Petrol,24
+BMW G310R,Bike,2023,55,Petrol,55
+Maruti Swift,Car,2024,22,Diesel,22
+Revolt RV400,Bike,2021,0,Electric,200
+Audi e-tron,Car,2005,25,Petrol,25
+Honda Shine,Bike,2001,30,Petrol,30
+Tata Altroz,Car,2002,17,Petrol,17
+Yamaha MT15,Bike,2002,0,Electric,164
+Volkswagen Polo,Car,1999,27,Hybrid,27
+Ducati Monster,Bike,2001,58,Petrol,58
+BMW i4,Car,2013,23,Hybrid,23
+Bajaj Pulsar 150,Bike,2002,54,Petrol,54
+Kia Seltos,Car,1999,0,Electric,545
+BMW G310R,Bike,2023,53,Petrol,53
+MG ZS EV,Car,2023,17,Diesel,17
+Revolt RV400,Bike,2020,0,Electric,126
+Renault Duster,Car,2014,24,Diesel,24
+Ducati Monster,Bike,2013,57,Petrol,57
+Toyota Innova,Car,2004,22,Hybrid,22
+Royal Enfield Classic 350,Bike,2022,0,Electric,114
+Honda Amaze,Car,1997,21,Diesel,21
+TVS Apache RTR 160,Bike,2004,0,Electric,107
+Toyota Fortuner,Car,1998,24,Diesel,24
+Bajaj Pulsar 150,Bike,2014,50,Petrol,50
+Mahindra XUV400 EV,Car,2018,14,Diesel,14
+KTM Duke 390,Bike,2003,0,Electric,105
+BMW i4,Car,1999,24,Diesel,24
+Honda Shine,Bike,2000,30,Petrol,30
+Renault Duster,Car,2004,25,Hybrid,25
+KTM Duke 390,Bike,2015,59,Petrol,59
+Mahindra XUV300,Car,2007,0,Electric,383
+Hero Splendor Plus,Bike,2022,47,Petrol,47
+Renault Duster,Car,2018,21,Hybrid,21
+Suzuki Gixxer SF,Bike,2011,0,Electric,176
+Toyota Fortuner,Car,1999,0,Electric,457
+Royal Enfield Classic 350,Bike,2011,0,Electric,174
+Skoda Rapid,Car,1997,26,Hybrid,26
+Bajaj Pulsar 150,Bike,2019,44,Petrol,44
+Hyundai Kona Electric,Car,2021,0,Electric,458
+Yamaha MT15,Bike,2022,0,Electric,123
+Honda City,Car,2020,0,Electric,539
+Hero Splendor Plus,Bike,2007,0,Electric,181
+Audi e-tron,Car,1999,23,Diesel,23
+Suzuki Gixxer SF,Bike,2022,43,Petrol,43
+Honda Accord Hybrid,Car,2013,27,Hybrid,27
+Harley Davidson Street 750,Bike,2015,60,Petrol,60
+Renault Duster,Car,2011,18,Diesel,18
+Ola S1 Pro,Bike,2009,0,Electric,200
+Audi e-tron,Car,2004,22,Hybrid,22
+Triumph Street Triple,Bike,2000,53,Petrol,53
+Tesla Model Y,Car,2011,24,Hybrid,24
+Bajaj Dominar 400,Bike,2013,58,Petrol,58
+Volkswagen Polo,Car,2018,21,Petrol,21
+TVS iQube,Bike,2017,50,Petrol,50
+Mahindra XUV300,Car,2024,20,Petrol,20
+Kawasaki Ninja 300,Bike,2022,0,Electric,107
+Honda City,Car,2017,24,Hybrid,24
+Kawasaki Ninja 300,Bike,2001,58,Petrol,58
+Maruti Dzire,Car,1998,27,Hybrid,27
+Bajaj Dominar 400,Bike,2021,55,Petrol,55
+Honda Amaze,Car,2024,28,Hybrid,28
+TVS iQube,Bike,2019,46,Petrol,46
+Toyota Innova,Car,2022,22,Hybrid,22
+Bajaj Dominar 400,Bike,2009,0,Electric,196
+MG ZS EV,Car,2024,24,Diesel,24
+Ather 450X,Bike,2025,0,Electric,170
+Hyundai Verna,Car,2014,22,Diesel,22
+Ola S1 Pro,Bike,2013,0,Electric,188
+Volkswagen Polo,Car,2015,19,Diesel,19
+KTM Duke 390,Bike,2016,41,Petrol,41
+Renault Duster,Car,2003,12,Diesel,12
+Suzuki Gixxer SF,Bike,2002,48,Petrol,48
+MG ZS EV,Car,1997,10,Petrol,10
+Royal Enfield Classic 350,Bike,2013,41,Petrol,41
+Mercedes EQS,Car,2014,17,Diesel,17
+Revolt RV400,Bike,2010,55,Petrol,55
+Maruti Dzire,Car,2002,20,Hybrid,20
+Triumph Street Triple,Bike,2010,0,Electric,137
+Kia Seltos,Car,2020,21,Petrol,21
+KTM Duke 390,Bike,2016,57,Petrol,57
+Tata Nexon,Car,2025,0,Electric,541
+Ather 450X,Bike,2016,0,Electric,158
+Mahindra XUV300,Car,2020,0,Electric,341
+Ather 450X,Bike,2020,32,Petrol,32
+Renault Duster,Car,2013,25,Hybrid,25
+Bajaj Dominar 400,Bike,2013,0,Electric,133
+Tesla Model 3,Car,2005,15,Petrol,15
+Honda Activa 6G,Bike,2007,0,Electric,172
+Toyota Fortuner,Car,2004,24,Hybrid,24
+Ola S1 Pro,Bike,2007,0,Electric,141
+Hyundai Kona Electric,Car,2013,0,Electric,495
+Ather 450X,Bike,2022,33,Petrol,33
+Toyota Innova,Car,2005,22,Petrol,22
+BMW G310R,Bike,2018,56,Petrol,56
+Audi e-tron,Car,1996,14,Diesel,14
+Ducati Monster,Bike,2013,53,Petrol,53
+Tata Altroz,Car,2003,0,Electric,256
+Yamaha MT15,Bike,2023,0,Electric,121
+Tesla Model 3,Car,2010,14,Petrol,14
+Harley Davidson Street 750,Bike,2001,55,Petrol,55
+Skoda Rapid,Car,2014,20,Diesel,20
+Harley Davidson Street 750,Bike,2009,31,Petrol,31
+Toyota Innova,Car,2021,17,Diesel,17
+Triumph Street Triple,Bike,2021,37,Petrol,37
+Mercedes EQS,Car,2007,0,Electric,243
+Yamaha MT15,Bike,2007,51,Petrol,51
+Toyota Prius,Car,2001,15,Diesel,15
+Yamaha R15 V4,Bike,2024,0,Electric,115
+Honda Accord Hybrid,Car,2016,20,Diesel,20
+Triumph Street Triple,Bike,2014,0,Electric,105
+Ford EcoSport,Car,2017,19,Petrol,19
+TVS Apache RTR 160,Bike,2005,0,Electric,172
+Ford EcoSport,Car,2019,21,Hybrid,21
+Bajaj Pulsar 150,Bike,2017,0,Electric,143
+Kia Seltos,Car,2019,22,Hybrid,22
+Kawasaki Ninja 300,Bike,2013,53,Petrol,53
+Mahindra XUV400 EV,Car,2011,11,Petrol,11
+Ola S1 Pro,Bike,2006,0,Electric,170
+Jeep Compass,Car,2013,22,Petrol,22
+Honda Shine,Bike,2018,0,Electric,109
+Audi e-tron,Car,2018,16,Diesel,16
+Bajaj Dominar 400,Bike,2013,55,Petrol,55
+Hyundai Creta,Car,2005,28,Hybrid,28
+Yamaha MT15,Bike,2015,44,Petrol,44
+Maruti Dzire,Car,2011,0,Electric,419
+Revolt RV400,Bike,2023,45,Petrol,45
+Tesla Model Y,Car,1995,23,Petrol,23
+Yamaha R15 V4,Bike,2025,59,Petrol,59
+Renault Duster,Car,1998,12,Diesel,12
+Harley Davidson Street 750,Bike,2009,56,Petrol,56
+Tata Nexon,Car,2006,23,Petrol,23
+Triumph Street Triple,Bike,2025,33,Petrol,33
+Ford EcoSport,Car,2016,16,Petrol,16
+BMW G310R,Bike,2016,0,Electric,167
+Honda Accord Hybrid,Car,2025,23,Diesel,23
+Suzuki Gixxer SF,Bike,2011,0,Electric,168
+Kia Seltos,Car,1997,21,Diesel,21
+Ather 450X,Bike,2018,45,Petrol,45
+Tata Nexon,Car,2005,11,Petrol,11
+Yamaha MT15,Bike,2001,0,Electric,166
+Mercedes EQS,Car,2002,0,Electric,499
+Yamaha R15 V4,Bike,2010,57,Petrol,57
+Tata Nexon,Car,2007,0,Electric,556
+Honda Activa 6G,Bike,2014,32,Petrol,32
+Toyota Innova,Car,2014,21,Hybrid,21
+Yamaha MT15,Bike,2000,0,Electric,152
+BMW i4,Car,2012,0,Electric,413
+BMW G310R,Bike,2017,30,Petrol,30
+Tata Altroz,Car,2017,19,Diesel,19
+Hero Splendor Plus,Bike,2002,0,Electric,87
+Mahindra XUV400 EV,Car,2024,24,Hybrid,24
+Ola S1 Pro,Bike,2017,0,Electric,178
+Toyota Fortuner,Car,2021,18,Diesel,18
+Kawasaki Ninja 300,Bike,2024,0,Electric,200
+Skoda Rapid,Car,2022,24,Hybrid,24
+Harley Davidson Street 750,Bike,2017,0,Electric,130
+Mercedes EQS,Car,2006,20,Diesel,20
+Ather 450X,Bike,2021,0,Electric,168
+Ford EcoSport,Car,2010,12,Diesel,12
+Yamaha R15 V4,Bike,2006,0,Electric,155
+Tesla Model Y,Car,2004,0,Electric,524
+Hero Splendor Plus,Bike,2012,35,Petrol,35
+Hyundai Verna,Car,2011,21,Hybrid,21
+Bajaj Pulsar 150,Bike,2003,32,Petrol,32
+Honda Accord Hybrid,Car,2011,0,Electric,502
+Harley Davidson Street 750,Bike,2014,0,Electric,110
+Tata Altroz,Car,2024,22,Hybrid,22
+Yamaha MT15,Bike,2016,56,Petrol,56
+Ford EcoSport,Car,2021,0,Electric,495
+Yamaha R15 V4,Bike,2004,0,Electric,193
+Hyundai Creta,Car,2005,22,Diesel,22
+Yamaha MT15,Bike,2001,36,Petrol,36
+Mahindra XUV300,Car,2018,21,Hybrid,21
+Suzuki Gixxer SF,Bike,2024,48,Petrol,48
+Audi e-tron,Car,2020,0,Electric,313
+Royal Enfield Classic 350,Bike,2022,59,Petrol,59
+Tesla Model Y,Car,2000,0,Electric,424
+Bajaj Dominar 400,Bike,2006,0,Electric,152
+Hyundai Verna,Car,2009,20,Petrol,20
+Hero Splendor Plus,Bike,2013,46,Petrol,46
+Maruti Swift,Car,2001,14,Petrol,14
+Yamaha MT15,Bike,2024,0,Electric,168
+Maruti Baleno,Car,2003,0,Electric,595
+Harley Davidson Street 750,Bike,2016,51,Petrol,51
+Honda City,Car,2003,21,Diesel,21
+Ducati Monster,Bike,2022,0,Electric,94
+Kia Seltos,Car,2008,0,Electric,262
+Ather 450X,Bike,2011,39,Petrol,39
+Mahindra Scorpio,Car,2018,0,Electric,351
+Kawasaki Ninja 300,Bike,2012,0,Electric,115
+Tata Altroz,Car,2021,26,Hybrid,26
+TVS Apache RTR 160,Bike,2023,0,Electric,172
+Kia Seltos,Car,2013,0,Electric,393
+Ola S1 Pro,Bike,2015,57,Petrol,57
+Ford EcoSport,Car,2010,17,Petrol,17
+Harley Davidson Street 750,Bike,2022,0,Electric,88
+Mercedes EQS,Car,2015,25,Hybrid,25
+Ather 450X,Bike,2017,53,Petrol,53
+Mahindra XUV400 EV,Car,1995,23,Hybrid,23
+Revolt RV400,Bike,2001,48,Petrol,48
+Jeep Compass,Car,2024,15,Diesel,15
+Ather 450X,Bike,2021,0,Electric,93
+Tesla Model Y,Car,2019,0,Electric,597
+TVS iQube,Bike,2016,0,Electric,188
+Ford EcoSport,Car,2010,24,Hybrid,24
+Yamaha R15 V4,Bike,2001,0,Electric,167
+Tesla Model 3,Car,2019,22,Diesel,22
+Ather 450X,Bike,2013,0,Electric,128
+Tesla Model 3,Car,2004,17,Diesel,17
+Yamaha MT15,Bike,2020,49,Petrol,49
+MG ZS EV,Car,2017,20,Hybrid,20
+Honda Shine,Bike,2014,57,Petrol,57
+Toyota Fortuner,Car,2021,22,Hybrid,22
+Harley Davidson Street 750,Bike,2002,38,Petrol,38
+Toyota Fortuner,Car,2018,27,Hybrid,27
+Triumph Street Triple,Bike,2006,0,Electric,89
+MG ZS EV,Car,2012,23,Hybrid,23
+Triumph Street Triple,Bike,2021,56,Petrol,56
+Tesla Model 3,Car,2008,24,Petrol,24
+Royal Enfield Classic 350,Bike,2012,52,Petrol,52
+Jeep Compass,Car,2019,21,Diesel,21
+Yamaha R15 V4,Bike,2013,0,Electric,170
+Audi e-tron,Car,2006,15,Diesel,15
+Honda Activa 6G,Bike,2008,49,Petrol,49
+Hyundai i20,Car,2007,20,Diesel,20
+TVS Apache RTR 160,Bike,2015,34,Petrol,34
+Mercedes EQS,Car,2014,0,Electric,236
+Kawasaki Ninja 300,Bike,2006,32,Petrol,32
+Maruti Baleno,Car,1999,21,Hybrid,21
+TVS iQube,Bike,2003,0,Electric,159
+Mahindra XUV300,Car,2025,28,Hybrid,28
+Triumph Street Triple,Bike,2003,0,Electric,161
+Mahindra Scorpio,Car,2021,13,Petrol,13
+Yamaha MT15,Bike,2013,33,Petrol,33
+Maruti Baleno,Car,2003,20,Hybrid,20
+Bajaj Dominar 400,Bike,2014,36,Petrol,36
+Mercedes EQS,Car,2021,18,Diesel,18
+Bajaj Pulsar 150,Bike,2022,0,Electric,152
+Mercedes EQS,Car,2011,22,Hybrid,22
+TVS iQube,Bike,2005,0,Electric,162
+Mercedes EQS,Car,2000,23,Petrol,23
+Hero Splendor Plus,Bike,2000,0,Electric,160
+Tata Nexon,Car,2017,26,Hybrid,26
+Hero Splendor Plus,Bike,2020,0,Electric,186
+Tata Altroz,Car,2015,18,Diesel,18
+Honda Shine,Bike,2020,49,Petrol,49
+Audi e-tron,Car,1996,0,Electric,413
+Honda Activa 6G,Bike,2006,39,Petrol,39
+Maruti Dzire,Car,2022,20,Diesel,20
+Kawasaki Ninja 300,Bike,2016,0,Electric,103
+Honda City,Car,2013,12,Diesel,12
+Ola S1 Pro,Bike,2023,0,Electric,182
+Tesla Model Y,Car,2012,28,Hybrid,28
+Suzuki Gixxer SF,Bike,2009,0,Electric,118
+Toyota Fortuner,Car,2022,13,Diesel,13
+Bajaj Pulsar 150,Bike,2019,35,Petrol,35
+BMW i4,Car,2018,0,Electric,285
+Royal Enfield Classic 350,Bike,2014,43,Petrol,43
+MG ZS EV,Car,2005,12,Petrol,12
+Royal Enfield Classic 350,Bike,2012,0,Electric,126
+Ford EcoSport,Car,2006,23,Diesel,23
+Yamaha MT15,Bike,2000,31,Petrol,31
+Audi e-tron,Car,2001,0,Electric,322
+Triumph Street Triple,Bike,2021,0,Electric,95
+Audi e-tron,Car,2003,22,Hybrid,22
+Yamaha MT15,Bike,2021,0,Electric,174
+Renault Duster,Car,2000,23,Diesel,23
+Ola S1 Pro,Bike,2000,58,Petrol,58
+Tata Altroz,Car,2002,14,Diesel,14
+TVS Apache RTR 160,Bike,2018,42,Petrol,42
+Honda City,Car,2006,0,Electric,564
+Kawasaki Ninja 300,Bike,2003,0,Electric,189
+Hyundai Creta,Car,2020,0,Electric,301
+Ola S1 Pro,Bike,2015,37,Petrol,37
+Jeep Compass,Car,2016,0,Electric,566
+Yamaha MT15,Bike,2022,48,Petrol,48
+Hyundai Verna,Car,2004,0,Electric,286
+Ola S1 Pro,Bike,2002,0,Electric,191
+Jeep Compass,Car,2023,15,Diesel,15
+Royal Enfield Classic 350,Bike,2013,0,Electric,119
+Hyundai Verna,Car,2010,25,Petrol,25
+Revolt RV400,Bike,2015,32,Petrol,32
+Honda City,Car,2002,25,Petrol,25
+Harley Davidson Street 750,Bike,2021,0,Electric,106
+Audi e-tron,Car,2020,12,Petrol,12
+Ola S1 Pro,Bike,2011,50,Petrol,50
+Hyundai Kona Electric,Car,2024,0,Electric,404
+TVS Apache RTR 160,Bike,2017,37,Petrol,37
+Audi e-tron,Car,2002,26,Hybrid,26
+KTM Duke 390,Bike,2013,50,Petrol,50
+Volkswagen Polo,Car,1998,16,Diesel,16
+Honda Shine,Bike,2016,55,Petrol,55
+Renault Duster,Car,2018,20,Petrol,20
+Hero Splendor Plus,Bike,2022,31,Petrol,31
+Maruti Dzire,Car,2023,20,Diesel,20
+Kawasaki Ninja 300,Bike,2004,0,Electric,123
+Tata Nexon,Car,2006,28,Hybrid,28
+Honda Shine,Bike,2002,43,Petrol,43
+BMW i4,Car,2001,26,Hybrid,26
+Harley Davidson Street 750,Bike,2004,54,Petrol,54
+Honda City,Car,2008,22,Hybrid,22
+Yamaha MT15,Bike,2023,55,Petrol,55
+Toyota Fortuner,Car,1998,28,Hybrid,28
+Royal Enfield Classic 350,Bike,2003,0,Electric,197
+Jeep Compass,Car,2015,0,Electric,506
+Honda Activa 6G,Bike,2019,0,Electric,143
+Honda Amaze,Car,2016,0,Electric,436
+Honda Activa 6G,Bike,2009,0,Electric,100
+Mahindra XUV300,Car,2007,12,Petrol,12
+Honda Activa 6G,Bike,2010,0,Electric,113
+Tesla Model 3,Car,2021,0,Electric,394
+BMW G310R,Bike,2006,0,Electric,177
+Jeep Compass,Car,2023,19,Diesel,19
+Honda Shine,Bike,2024,0,Electric,161
+Audi e-tron,Car,2009,16,Petrol,16
+Harley Davidson Street 750,Bike,2002,0,Electric,134
+Toyota Prius,Car,2003,21,Petrol,21
+Honda Shine,Bike,2019,0,Electric,104
+Toyota Fortuner,Car,2024,15,Petrol,15
+Triumph Street Triple,Bike,2024,43,Petrol,43
+Tata Nexon,Car,2007,26,Hybrid,26
+Royal Enfield Classic 350,Bike,2022,47,Petrol,47
+Mahindra XUV300,Car,2020,18,Diesel,18
+Yamaha MT15,Bike,2016,47,Petrol,47
+Maruti Baleno,Car,2000,23,Diesel,23
+Ducati Monster,Bike,2018,0,Electric,133
+Kia Seltos,Car,2004,27,Hybrid,27
+Triumph Street Triple,Bike,2018,51,Petrol,51
+Mahindra XUV400 EV,Car,2006,15,Petrol,15
+Ola S1 Pro,Bike,2023,0,Electric,102
+Hyundai Creta,Car,2019,16,Diesel,16
+Kawasaki Ninja 300,Bike,2009,41,Petrol,41
+Skoda Rapid,Car,2007,13,Diesel,13
+Hero Splendor Plus,Bike,2008,33,Petrol,33
+Renault Duster,Car,2023,18,Diesel,18
+Ather 450X,Bike,2010,51,Petrol,51
+BMW i4,Car,1996,14,Diesel,14
+BMW G310R,Bike,2008,0,Electric,172
+Skoda Rapid,Car,2021,15,Petrol,15
+Triumph Street Triple,Bike,2006,49,Petrol,49
+Tesla Model Y,Car,2009,0,Electric,286
+Royal Enfield Classic 350,Bike,2013,0,Electric,142
+Hyundai Creta,Car,2006,0,Electric,252
+Honda Activa 6G,Bike,2003,0,Electric,137
+Mahindra XUV400 EV,Car,1997,14,Diesel,14
+TVS iQube,Bike,2012,45,Petrol,45
+Honda City,Car,1997,0,Electric,433
+Honda Shine,Bike,2004,30,Petrol,30
+Tesla Model 3,Car,2001,11,Petrol,11
+Yamaha R15 V4,Bike,2012,0,Electric,198
+Hyundai Verna,Car,2005,22,Petrol,22
+Ather 450X,Bike,2017,0,Electric,153
+Tesla Model 3,Car,2015,21,Petrol,21
+Harley Davidson Street 750,Bike,2006,0,Electric,128
+Mahindra XUV300,Car,2008,19,Diesel,19
+TVS Apache RTR 160,Bike,2018,0,Electric,136
+Hyundai Verna,Car,2018,24,Hybrid,24
+Bajaj Dominar 400,Bike,2007,51,Petrol,51
+Hyundai Verna,Car,2009,20,Petrol,20
+Ather 450X,Bike,2017,58,Petrol,58
+Honda City,Car,2023,22,Diesel,22
+Revolt RV400,Bike,2003,0,Electric,90
+Maruti Baleno,Car,1996,11,Petrol,11
+Triumph Street Triple,Bike,2013,0,Electric,106
+Mercedes EQS,Car,2021,0,Electric,467
+Yamaha MT15,Bike,2022,0,Electric,185
+BMW i4,Car,2012,24,Hybrid,24
+Ducati Monster,Bike,2021,37,Petrol,37
+Honda Accord Hybrid,Car,1998,26,Hybrid,26
+Yamaha R15 V4,Bike,2009,0,Electric,137
+Hyundai Kona Electric,Car,2023,28,Hybrid,28
+TVS Apache RTR 160,Bike,2004,39,Petrol,39
+Maruti Dzire,Car,2025,16,Petrol,16
+Yamaha MT15,Bike,2021,0,Electric,81
+Honda City,Car,2008,21,Petrol,21
+Revolt RV400,Bike,2012,0,Electric,80
+Mahindra XUV400 EV,Car,2012,25,Petrol,25
+Bajaj Dominar 400,Bike,2021,48,Petrol,48
+Ford EcoSport,Car,2024,13,Petrol,13
+Kawasaki Ninja 300,Bike,2020,0,Electric,97
+Kia Seltos,Car,1995,13,Diesel,13
+Bajaj Dominar 400,Bike,2008,0,Electric,158
+Hyundai i20,Car,2010,22,Hybrid,22
+Ola S1 Pro,Bike,2018,48,Petrol,48
+Toyota Fortuner,Car,2017,17,Petrol,17
+Yamaha MT15,Bike,2017,0,Electric,83
+Tata Nexon,Car,2021,20,Petrol,20
+Bajaj Pulsar 150,Bike,2013,0,Electric,169
+Renault Duster,Car,1997,13,Diesel,13
+KTM Duke 390,Bike,2016,50,Petrol,50
+Honda City,Car,2013,17,Diesel,17
+Suzuki Gixxer SF,Bike,2004,40,Petrol,40
+Mahindra Scorpio,Car,2010,0,Electric,343
+Triumph Street Triple,Bike,2003,45,Petrol,45
+Mercedes EQS,Car,1996,13,Diesel,13
+Bajaj Dominar 400,Bike,2024,53,Petrol,53
+Mercedes EQS,Car,2016,21,Petrol,21
+Honda Shine,Bike,2016,32,Petrol,32
+Maruti Baleno,Car,2006,0,Electric,536
+TVS Apache RTR 160,Bike,2014,0,Electric,157
+Audi e-tron,Car,1996,0,Electric,449
+Ola S1 Pro,Bike,2002,60,Petrol,60
+Jeep Compass,Car,2021,14,Petrol,14
+Royal Enfield Classic 350,Bike,2013,0,Electric,186
+Mahindra Scorpio,Car,2023,22,Petrol,22
+Yamaha R15 V4,Bike,2025,0,Electric,176
+Volkswagen Polo,Car,2015,0,Electric,256
+Royal Enfield Classic 350,Bike,2023,31,Petrol,31
+Mahindra Scorpio,Car,2004,24,Hybrid,24
+Hero Splendor Plus,Bike,2002,0,Electric,127
+Mahindra XUV300,Car,2016,0,Electric,219
+Yamaha R15 V4,Bike,2004,0,Electric,185
+Renault Duster,Car,2015,28,Hybrid,28
+Honda Shine,Bike,2019,0,Electric,131
+Tata Altroz,Car,2022,17,Diesel,17
+Bajaj Pulsar 150,Bike,2012,0,Electric,165
+Mahindra Scorpio,Car,2003,21,Hybrid,21
+Suzuki Gixxer SF,Bike,2016,0,Electric,157
